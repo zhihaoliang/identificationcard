@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.dx.identificationcard.MainActivity">
+
+
+    <LinearLayout
+        style="@style/editText_layout"
+        android:paddingTop="15dp">
+
+        <TextView
+            style="@style/editText_lable"
+            android:text="身份证" />
+
+
+        <EditText
+            android:id="@+id/card_num"
+            style="@style/editText_main"
+            android:hint="身份证号前17位"
+            android:inputType="phone"
+            android:maxLength="17" />
+    </LinearLayout>
+
+    <Button
+        style="@style/Next_Button"
+        android:onClick="onCalculation"
+        android:text="计算" />
+
+
+    <LinearLayout
+        style="@style/editText_layout"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/all_num"
+            style="@style/editText_lable"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>
